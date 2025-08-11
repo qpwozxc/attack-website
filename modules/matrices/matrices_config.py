@@ -54,6 +54,7 @@ matrices = [
             "Network Devices",
             "Containers",
             "ESXi",
+            "Space",
         ],
         "descr": "Below are the tactics and techniques representing the MITRE ATT&CK<sup>&reg;</sup> Matrix for Enterprise.",
         "subtypes": [
@@ -166,6 +167,15 @@ matrices = [
                 "descr": "Below are the tactics and techniques representing the MITRE ATT&CK<sup>&reg;</sup> ESXi platform. The techniques below are known to target VMware ESXi hypervisors. The Matrix contains information for the ESXi platform.",
                 "subtypes": [],
             },
+            {
+                "name": "Space",
+                "type": "local",
+                "matrix": "enterprise-attack",
+                "path": "enterprise/space",
+                "platforms": ["Space"],
+                "descr": "Below are the tactics and techniques representing the MITRE ATT&CK<sup>&reg;</sup> Space platform. The techniques below are known to target spacecraft systems.",
+                "subtypes": [],
+            },
         ],
     },
     {
@@ -227,6 +237,7 @@ platform_to_path = {
     "Network Devices": "enterprise/network-devices",
     "Containers": "enterprise/containers",
     "ESXi": "enterprise/esxi",
+    "Space": "enterprise/space",
     "Android": "mobile/android",
     "iOS": "mobile/ios",
 }
